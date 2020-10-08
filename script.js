@@ -33,31 +33,3 @@ menu_item.forEach(item => {
     }, 1000);
     });
 });
-
-document.querySelector(".hamburger-menu").addEventListener("touch", () => {
-    document.querySelector(".container").classList.toggle("change");
-});
-
-document.querySelector(".scroll-btn").addEventListener ("touch", () => {
-    document.querySelector("html").style.scrollBehavior = "smooth";
-    setTimeout(() => {
-        document.querySelector("html").style.scrollBehavior = "unset";
-    }, 1000);
-});
-
-document.querySelector(".button").addEventListener ("touch", () => {
-    document.querySelector("html").style.scrollBehavior = "smooth";
-    setTimeout(() => {
-        document.querySelector("html").style.scrollBehavior = "unset";
-    }, 1000);
-});
-
-menu_item.forEach(item => {
-    item.addEventListener("touch" , () => {
-        document.querySelector(".container").classList.toggle('change');
-        document.querySelector("html").style.scrollBehavior = "smooth";
-    setTimeout(() => {
-        document.querySelector("html").style.scrollBehavior = "unset";
-    }, 1000);
-    });
-});
