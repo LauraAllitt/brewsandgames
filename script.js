@@ -6,11 +6,11 @@ window.onload = () => {
     }, 4000);
   };
   
-document.querySelector(".hamburger-menu").addEventListener("click", () => {
+document.querySelector(".hamburger-menu").addEventListener("click touch", () => {
     document.querySelector(".container").classList.toggle("change");
 });
 
-document.querySelector(".scroll-btn").addEventListener ("click", () => {
+document.querySelector(".scroll-btn").addEventListener ("click touch", () => {
     document.querySelector("html").style.scrollBehavior = "smooth";
     setTimeout(() => {
         document.querySelector("html").style.scrollBehavior = "unset";
@@ -18,7 +18,7 @@ document.querySelector(".scroll-btn").addEventListener ("click", () => {
 });
 
 menu_item.forEach(item => {
-    item.addEventListener("click" , () => {
+    item.addEventListener("click touch" , () => {
         document.querySelector(".container").classList.toggle('change');
         document.querySelector("html").style.scrollBehavior = "smooth";
     setTimeout(() => {
