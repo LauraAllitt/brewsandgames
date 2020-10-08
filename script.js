@@ -17,13 +17,6 @@ document.querySelector(".scroll-btn").addEventListener ("click", () => {
     }, 1000);
 });
 
-document.querySelector(".button").addEventListener ("click", () => {
-    document.querySelector("html").style.scrollBehavior = "smooth";
-    setTimeout(() => {
-        document.querySelector("html").style.scrollBehavior = "unset";
-    }, 1000);
-});
-
 menu_item.forEach(item => {
     item.addEventListener("click" , () => {
         document.querySelector(".container").classList.toggle('change');
